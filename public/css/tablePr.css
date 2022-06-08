@@ -1,0 +1,33 @@
+.hero {
+    even: var(--cs-wiersz-even);
+    odd: var(--cs-wiersz-odd);
+}
+:root {
+    --cs-wiersz-even: #400080;
+    --cs-wiersz-odd: #ffffff;
+}
+
+
+tbody:nth-child(even) tr:nth-child(odd) {
+    background-color: var(--cs-wiersz-odd);
+}
+tbody:nth-child(even) tr:nth-child(even) {
+    background-color: var(--cs-wiersz-even);
+}
+
+.kolmn1{
+    width: 30px;
+}
+thead{
+    color: #ffebcd;
+    background: #3e5d75;
+
+}
+.tablePr {
+    border-collapse: separate;
+    border-spacing: 3px;
+
+}
+th, td{
+    padding: 5px;
+}

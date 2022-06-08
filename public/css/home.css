@@ -1,0 +1,173 @@
+
+.headerTexts{
+	margin: 20% 0;
+	padding: 20px;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.headerSection h1{
+	margin-top: 0;
+}
+
+.headerSection .h2{
+	margin-bottom: 5px;
+}
+
+.section{
+	text-align: center;
+}
+
+.sidebar{
+	width: calc(100% / 4 - var(--offset) * 2);
+	margin-top: 15px;
+	border-right:3px solid gray;
+	padding-right:10px;
+	text-align: left;
+	padding-left: 20px;
+}
+div {
+	margin-bottom: 10px;
+	position: relative;
+}
+
+input + span {
+	padding-right: 130px;
+}
+
+input:invalid+span::before {
+	position: absolute; content: '✖';
+	padding-left: 5px;
+	background:rosybrown;
+}
+
+input:valid+span::before {
+	position: absolute;
+	content: '✓';
+	padding-left: 5px;
+}
+
+.teamItem .h3{
+	color: var(--green);
+}
+
+.advTexts{
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.teamItem .social span{
+	margin: 0 5px;
+}
+
+.teamItem .social span:hover{
+	color: var(--green);
+}
+
+.sectionAdv, .sectionTeam{
+	padding: 3rem 0;
+}
+
+.table{
+	width: calc(100% / 4 * 3 - var(--offset) * 2);
+	display: flex;
+	margin-top: 35px;
+}
+
+.advItem .title{
+	color: var(--green);
+	margin-top: 0;
+}
+
+.liMargin{
+	margin-top: 60px;
+}
+
+.kontrolka{
+	width: calc(100% / 2 - var(--offset) * 2);
+}
+
+/* .advTexts .text{
+	font-size: 1.25em;
+} */
+
+.advRange img {
+	vertical-align: middle;
+}
+
+
+.galleryItem img{
+	display: block;
+}
+
+.sectionTest h2, .sectionTest p{
+	color: #fff;
+}
+
+
+.container{
+	position: relative;
+}
+
+.tablePr {
+	width: 90%;
+}
+
+.tablePr,  th, td
+{
+	border: 1px solid;
+}
+
+th, td {
+	padding: 15px;
+	text-align: left;
+}
+.boldtitle {
+	color: green;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+@media screen and (max-width: 992px){
+	.advItem{
+		width: calc(100% / 1 - var(--offset) * 2);
+	}
+}
+
+@media screen and (max-width: 768px){
+	.team{
+		justify-content: center;
+	}
+
+	.teamItem{
+		width: calc(100% / 1 - var(--offset) * 2);
+		max-width: 370px;
+	}
+
+	.galleryItem{
+		width: calc(100% / 2 - var(--offset) * 2);
+	}
+}
+
+@media screen and (max-width: 560px){
+	.advItem{
+		display: block;
+	}
+
+	.advTexts{
+		width: auto;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.galleryItem{
+		width: calc(100% / 1 - var(--offset) * 2);
+	}
+}
+.element {
+	background-color: #FF0000;
+	height: 80px;
+	width: 20%;
+}
